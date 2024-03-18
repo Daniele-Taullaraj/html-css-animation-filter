@@ -81,3 +81,39 @@
 .ex-9-img {
     transition: 1s;
 }
+
+/* 10 */
+/* animazione "spin" da fare in 1 secondo in 
+maniera lineare e all'infinito */
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 11 */
+.ex-11-icon:hover {
+    animation: halfspin 1s linear;
+}
+
+@keyframes halfspin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
